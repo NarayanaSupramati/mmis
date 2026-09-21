@@ -1,0 +1,9 @@
+{
+  "chain": "solana:devnet",
+  "genesisHash": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+  "programId": "Bb3evw39nAonSVCykSnjjm1vrdKhuy6MAR7R2iDQGCyJ",
+  "protocolVersion": 1,
+  "upgradeAuthority": "EBW8zg6Qd7KaP362GFZwa3fe4KYe163BkkeMTwWkJSiw",
+  "binarySha256": "cb739fa94b43cc19354968dfe81f0024becc85419287bf5973bc59a8d9ed0871",
+  "idlSha256": "2baeb0ea51bd618fc943ae46f840df338dd2db13c01c9d6685f411d499c23724"
+}

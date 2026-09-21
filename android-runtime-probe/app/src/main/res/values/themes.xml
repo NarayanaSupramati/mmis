@@ -1,0 +1,20 @@
+<resources>
+    <style name="Theme.Mmis.Starting.Base" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#0D1416</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/mmis_mark</item>
+        <item name="postSplashScreenTheme">@style/Theme.Mmis</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:statusBarColor">#0D1416</item>
+        <item name="android:navigationBarColor">#0D1416</item>
+    </style>
+    <style name="Theme.Mmis.Starting" parent="Theme.Mmis.Starting.Base" />
+    <style name="Theme.Mmis" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#0D1416</item>
+        <item name="android:colorAccent">#B8EACB</item>
+        <item name="android:statusBarColor">#0D1416</item>
+        <item name="android:navigationBarColor">#0D1416</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

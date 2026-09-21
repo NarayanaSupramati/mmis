@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <application android:name=".ProbeApplication" android:label="Money Moves in Silence" android:icon="@mipmap/mmis_launcher" android:allowBackup="false" android:theme="@style/Theme.Mmis">
+    <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="barcode_ui" />
+    <activity android:name=".RegistryActivity" android:exported="false" android:launchMode="singleTop" />
+    <activity android:name=".IdentityBackupActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+    <activity android:name=".WalletActivity" android:exported="false" android:launchMode="singleTop" />
+    <activity android:name=".MainActivity" android:theme="@style/Theme.Mmis.Starting" android:windowSoftInputMode="adjustResize" android:exported="true" android:launchMode="singleTop">
+      <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+      <!-- Host-level identity verification; only this explicit path opens the app. -->
+      <intent-filter android:autoVerify="true">
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="https" android:host="narayanasupramati.github.io" android:path="/mmis/open" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
+

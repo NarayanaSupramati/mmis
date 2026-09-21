@@ -1,0 +1,32 @@
+[package]
+name = "mmis-registry"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.89"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "mmis_registry"
+
+[features]
+default = []
+mainnet = []
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+idl-build = ["anchor-lang/idl-build"]
+anchor-debug = []
+custom-heap = []
+custom-panic = []
+
+[dependencies]
+anchor-lang = "=1.2.0"
+
+[dev-dependencies]
+serde_json = "=1.0.149"
+hex = "=0.4.3"
+
+[lints.rust.unexpected_cfgs]
+level = "warn"
+check-cfg = ['cfg(target_os, values("solana"))']

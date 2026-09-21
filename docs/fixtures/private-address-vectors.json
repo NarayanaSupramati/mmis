@@ -1,0 +1,34 @@
+[
+  {
+    "peer": {
+      "version": 1,
+      "signingPublicKey": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8=",
+      "dmToken": 0
+    },
+    "address": "sp1_AQABAgMEBQYHCAkKCwwNDg8QERITFBUWFxgZGhscHR4fAAAAAHeONkE"
+  },
+  {
+    "peer": {
+      "version": 1,
+      "signingPublicKey": "AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyA=",
+      "dmToken": 1
+    },
+    "address": "sp1_AQECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gAAAAAdQ4AQU"
+  },
+  {
+    "peer": {
+      "version": 1,
+      "signingPublicKey": "AgMEBQYHCAkKCwwNDg8QERITFBUWFxgZGhscHR4fICE=",
+      "dmToken": 3823185488
+    },
+    "address": "sp1_AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAh4-EuUHogAVo"
+  },
+  {
+    "peer": {
+      "version": 1,
+      "signingPublicKey": "AwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISI=",
+      "dmToken": 4294967295
+    },
+    "address": "sp1_AQMEBQYHCAkKCwwNDg8QERITFBUWFxgZGhscHR4fICEi_____95ioFg"
+  }
+]

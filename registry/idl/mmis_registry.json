@@ -1,0 +1,282 @@
+{
+  "address": "Bb3evw39nAonSVCykSnjjm1vrdKhuy6MAR7R2iDQGCyJ",
+  "metadata": {
+    "name": "mmis_registry",
+    "version": "0.1.0",
+    "spec": "0.1.0"
+  },
+  "instructions": [
+    {
+      "name": "close_endpoint",
+      "discriminator": [
+        22,
+        48,
+        90,
+        137,
+        252,
+        93,
+        197,
+        32
+      ],
+      "accounts": [
+        {
+          "name": "wallet",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "endpoint",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  109,
+                  109,
+                  105,
+                  115,
+                  45,
+                  101,
+                  110,
+                  100,
+                  112,
+                  111,
+                  105,
+                  110,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "wallet"
+              }
+            ]
+          }
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "register_endpoint",
+      "discriminator": [
+        43,
+        127,
+        224,
+        55,
+        196,
+        63,
+        5,
+        170
+      ],
+      "accounts": [
+        {
+          "name": "wallet",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "endpoint",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  109,
+                  109,
+                  105,
+                  115,
+                  45,
+                  101,
+                  110,
+                  100,
+                  112,
+                  111,
+                  105,
+                  110,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "wallet"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "xx_signing_public_key",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "dm_token",
+          "type": "u32"
+        }
+      ]
+    },
+    {
+      "name": "update_endpoint",
+      "discriminator": [
+        181,
+        225,
+        20,
+        139,
+        157,
+        236,
+        1,
+        94
+      ],
+      "accounts": [
+        {
+          "name": "wallet",
+          "signer": true
+        },
+        {
+          "name": "endpoint",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  109,
+                  109,
+                  105,
+                  115,
+                  45,
+                  101,
+                  110,
+                  100,
+                  112,
+                  111,
+                  105,
+                  110,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "wallet"
+              }
+            ]
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "xx_signing_public_key",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "dm_token",
+          "type": "u32"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "MessagingEndpoint",
+      "discriminator": [
+        58,
+        97,
+        85,
+        115,
+        95,
+        23,
+        69,
+        53
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "EndpointAlreadyRegistered",
+      "msg": "Endpoint already registered"
+    },
+    {
+      "code": 6001,
+      "name": "EndpointNotRegistered",
+      "msg": "Endpoint not registered"
+    },
+    {
+      "code": 6002,
+      "name": "EndpointNoChange",
+      "msg": "Endpoint unchanged"
+    },
+    {
+      "code": 6003,
+      "name": "EndpointRevisionOverflow",
+      "msg": "Endpoint revision overflow"
+    },
+    {
+      "code": 6004,
+      "name": "EndpointInvalidKey",
+      "msg": "Invalid xx signing public key"
+    },
+    {
+      "code": 6005,
+      "name": "EndpointInvalidToken",
+      "msg": "Invalid DM token"
+    },
+    {
+      "code": 6006,
+      "name": "EndpointUnsupportedVersion",
+      "msg": "Unsupported endpoint version"
+    },
+    {
+      "code": 6007,
+      "name": "EndpointMalformed",
+      "msg": "Malformed endpoint"
+    }
+  ],
+  "types": [
+    {
+      "name": "MessagingEndpoint",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "version",
+            "type": "u8"
+          },
+          {
+            "name": "xx_signing_public_key",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "dm_token",
+            "type": "u32"
+          },
+          {
+            "name": "revision",
+            "type": "u64"
+          }
+        ]
+      }
+    }
+  ]
+}

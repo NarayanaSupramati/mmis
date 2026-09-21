@@ -1,0 +1,22 @@
+{
+  "name": "Money Moves in Silence",
+  "version": "0.3.3-demo",
+  "versionCode": 13,
+  "package": "network.mmis.runtime",
+  "minSdk": 29,
+  "targetSdk": 36,
+  "bytes": 193406492,
+  "sha256": "d15bb0299540a6a89718cdeae68628a86062161fa2885d49c3b40952f86a7f6c",
+  "certificateSha256": "16:08:DF:41:E6:5B:EE:06:02:51:48:AE:A3:08:73:CF:13:0A:3A:8D:83:F8:57:6B:4D:BD:28:34:8C:C3:30:2A",
+  "website": "https://narayanasupramati.github.io",
+  "source": "https://github.com/NarayanaSupramati/mmis",
+  "network": "Solana Mainnet",
+  "programId": "MmisXGzDeJbPeK9uMDpqYxQ3ED7xsjYahP9rS5AvuYz",
+  "registryProtocolVersion": 1,
+  "upgradeable": true,
+  "artifact": "mmis-0.3.3-demo.apk",
+  "downloadUrl": null,
+  "publicationStatus": "pending",
+  "demoUrl": null,
+  "deckUrl": null
+}

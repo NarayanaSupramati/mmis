@@ -1,0 +1,9 @@
+{
+  "chain": "solana:mainnet",
+  "genesisHash": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "programId": "MmisXGzDeJbPeK9uMDpqYxQ3ED7xsjYahP9rS5AvuYz",
+  "protocolVersion": 1,
+  "upgradeAuthority": "MMiS5XBcZRPUK69w7ayuE7mBzby5BxzgifUsLKkHNeo",
+  "binarySha256": "fbe4daa1020f718c8242292afa375fbccde225041cbae3b20fe0806f27beafeb",
+  "idlSha256": "aded8ec78d86cefbe45f22165f7383b1e0be6d201ad318a0716b5f6d3a7000b0"
+}
