@@ -15,8 +15,9 @@
   "registryProtocolVersion": 1,
   "upgradeable": true,
   "artifact": "mmis-0.3.3-demo.apk",
-  "downloadUrl": null,
-  "publicationStatus": "pending",
+  "downloadUrl": "https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis-0.3.3-demo.apk",
+  "publicationStatus": "published",
   "demoUrl": null,
-  "deckUrl": null
+  "deckUrl": null,
+  "releaseUrl": "https://github.com/NarayanaSupramati/mmis/releases/tag/v0.3.3-demo"
 }

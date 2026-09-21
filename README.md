@@ -6,7 +6,7 @@ Type a `.skr` name or Solana wallet. MMIS discovers its public messaging endpoin
 
 **Android 10+ · Validated on Solana Seeker · Hackathon / beta**
 
-[Website](https://narayanasupramati.github.io) · APK publication pending · Demo coming shortly
+[Website](https://narayanasupramati.github.io) · [Download APK](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis-0.3.3-demo.apk) · [Release notes](https://github.com/NarayanaSupramati/mmis/releases/tag/v0.3.3-demo) · Demo coming shortly
 
 <!-- DEMO_URL: pending. Replace the text above with the actual video link. DECK_URL: omit until available. -->
 
@@ -73,9 +73,9 @@ Program: `MmisXGzDeJbPeK9uMDpqYxQ3ED7xsjYahP9rS5AvuYz`
 
 ## Try it
 
-The verified Android candidate is **0.3.3-demo**, code **13**. Public APK hosting is pending; no download link is available yet. The planned distribution is a GitHub Release, not an APK committed to source history.
+The verified Android beta is **0.3.3-demo**, code **13**. [Download the official APK from GitHub Releases](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis-0.3.3-demo.apk). The APK is a Release asset and is not committed to source history.
 
-When available, install the official APK on Android 10+ with a supported 4 KB page-size device, create or restore a messaging identity, and wait for private network Ready. Choose **New**, enter an address or scan its QR, review the recipient, then open a chat. For your own public listing, connect a Mainnet wallet and explicitly enable messaging. Wallet approval can incur Mainnet fees.
+Install the official APK on Android 10+ with a supported 4 KB page-size device, create or restore a messaging identity, and wait for private network Ready. Choose **New**, enter an address or scan its QR, review the recipient, then open a chat. For your own public listing, connect a Mainnet wallet and explicitly enable messaging. Wallet approval can incur Mainnet fees.
 
 Verify the APK with Android SDK build-tools:
 
