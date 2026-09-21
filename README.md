@@ -6,9 +6,9 @@ Type a `.skr` name or Solana wallet. MMIS discovers its public messaging endpoin
 
 **Android 10+ · Validated on Solana Seeker · Hackathon / beta**
 
-[Website](https://narayanasupramati.github.io) · [Download APK](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis-0.3.3-demo.apk) · [Release notes](https://github.com/NarayanaSupramati/mmis/releases/tag/v0.3.3-demo) · Demo coming shortly
+[Website](https://narayanasupramati.github.io) · [Download APK](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis-0.3.3-demo.apk) · [Release notes](https://github.com/NarayanaSupramati/mmis/releases/tag/v0.3.3-demo) · [Pitch deck (PDF)](https://narayanasupramati.github.io/mmis-hackathon-deck.pdf) · Demo coming shortly
 
-<!-- DEMO_URL: pending. Replace the text above with the actual video link. DECK_URL: omit until available. -->
+<!-- DEMO_URL: pending. Replace the text above with the actual video link. DECK_URL: published PDF above. -->
 
 ```text
 DISCOVERY   x0d.skr → Solana wallet → Mainnet registry → xx endpoint
