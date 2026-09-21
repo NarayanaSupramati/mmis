@@ -1,0 +1,2 @@
+# Keep the POSIX launcher executable on Linux/macOS checkouts.
+android-runtime-probe/gradlew text eol=lf
