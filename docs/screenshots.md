@@ -1,7 +1,13 @@
 # Product screenshots
 
-[conversation.png](images/conversation.png) is an unmodified real Android screen showing an empty x0d.skr conversation, before sending. It contains no private message text, wallet balance, backup contents or RPC configuration.
+## Conversation screen
 
-Pending controlled captures: Chats, New Message with x0d.skr, availability result, two-message conversation, Identity and optional foreground banner. Do not fabricate these screens.
+The screenshot below shows the actual Android app with an empty `x0d.skr` conversation, before sending.
 
-Use a dedicated demo identity/device. Preserve existing histories/backups; do not clear a user's data for screenshots. Show only controlled text: “Moves in silence. 👁” and “Heard through cMix.” Wait for transitions to finish; capture actual device UI. Review every image for unrelated names/messages, balances, notifications, passwords, backups and authenticated URLs before publication. Never capture the protected backup/restore screen. These later captures can replace the current image without changing the landing layout.
+<img src="images/conversation.png" alt="MMIS on Android: empty conversation with x0d.skr before sending" width="360">
+
+## Full product demo
+
+The [2-minute 50-second demo (MP4)](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis_demo.mp4) shows messaging identity creation on Seeker, wallet connection, enabling private messaging, Seeker ID lookup, and a real message exchange between two Android phones. It also demonstrates saving a local contact name.
+
+The video is a GitHub Release download; your browser may download it instead of playing it inline.
