@@ -17,7 +17,7 @@
   "artifact": "mmis-0.3.3-demo.apk",
   "downloadUrl": "https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis-0.3.3-demo.apk",
   "publicationStatus": "published",
-  "demoUrl": null,
+  "demoUrl": "https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis_demo.mp4",
   "deckUrl": "https://narayanasupramati.github.io/mmis-hackathon-deck.pdf",
   "releaseUrl": "https://github.com/NarayanaSupramati/mmis/releases/tag/v0.3.3-demo"
 }

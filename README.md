@@ -6,9 +6,9 @@ Type a `.skr` name or Solana wallet. MMIS discovers its public messaging endpoin
 
 **Android 10+ · Validated on Solana Seeker · Hackathon / beta**
 
-[Website](https://narayanasupramati.github.io) · [Download APK](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis-0.3.3-demo.apk) · [Release notes](https://github.com/NarayanaSupramati/mmis/releases/tag/v0.3.3-demo) · [Pitch deck (PDF)](https://narayanasupramati.github.io/mmis-hackathon-deck.pdf) · Demo coming shortly
+[Website](https://narayanasupramati.github.io) · [Download APK](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis-0.3.3-demo.apk) · [Release notes](https://github.com/NarayanaSupramati/mmis/releases/tag/v0.3.3-demo) · [Pitch deck (PDF)](https://narayanasupramati.github.io/mmis-hackathon-deck.pdf) · [Watch the demo](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis_demo.mp4)
 
-<!-- DEMO_URL: pending. Replace the text above with the actual video link. DECK_URL: published PDF above. -->
+
 
 ```text
 DISCOVERY   x0d.skr → Solana wallet → Mainnet registry → xx endpoint
@@ -17,7 +17,7 @@ MESSAGING   Your phone ──────────── xxDK / cMix ──�
 
 <img src="docs/images/conversation.png" width="260" alt="Actual Android screen: an empty conversation with x0d.skr and private network Ready">
 
-*Actual Android UI, before sending. A clean message-exchange video is pending.*
+*Actual Android UI, before sending. The linked demo shows setup and a real two-device exchange.*
 
 ## Why Solana?
 
