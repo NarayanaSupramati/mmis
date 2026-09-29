@@ -15,9 +15,21 @@ DISCOVERY   x0d.skr → Solana wallet → Mainnet registry → xx endpoint
 MESSAGING   Your phone ──────────── xxDK / cMix ──────── Recipient
 ```
 
-<img src="docs/images/conversation.png" width="260" alt="Actual Android screen: an empty conversation with x0d.skr and private network Ready">
+## See it in action
 
-*Actual Android UI, before sending. The linked demo shows setup and a real two-device exchange.*
+Real Android screens from the demo: recipient lookup on Solana Mainnet, followed by an incoming cMix message on Seeker.
+
+<p>
+  <img src="docs/images/bob-skr-lookup.png" width="220" alt="bob.skr lookup: Seeker ID found, but private messaging is not enabled">
+  <img src="docs/images/x0d-skr-lookup.png" width="220" alt="x0d.skr lookup: private messaging available, with an Open chat action">
+  <img src="docs/images/seeker-incoming-banner.png" width="220" alt="Seeker receiving Moves in silence in a foreground in-app banner">
+</p>
+
+- **Name found, messaging not enabled:** a Seeker ID alone does not make its wallet reachable through MMIS.
+- **Messaging available:** the wallet has a discoverable messaging endpoint, so the user can open a chat.
+- **Message received on Seeker:** the foreground banner shows the incoming demo message; it is not a background push notification.
+
+Lookup results reflect the state at capture time. See [larger screenshots and captions](docs/screenshots.md) or the [full 2:50 demo](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis_demo.mp4), including setup and the reply arriving on the sender's phone.
 
 ## Why Solana?
 
