@@ -6,7 +6,7 @@ Type a `.skr` name or Solana wallet. MMIS discovers its public messaging endpoin
 
 **Android 10+ · Validated on Solana Seeker · Hackathon / beta**
 
-[Website](https://narayanasupramati.github.io) · [Download APK](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis-0.3.3-demo.apk) · [Release notes](https://github.com/NarayanaSupramati/mmis/releases/tag/v0.3.3-demo) · [Pitch deck (PDF)](https://narayanasupramati.github.io/mmis-hackathon-deck.pdf) · [Watch the demo](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis_demo.mp4)
+[Website](https://narayanasupramati.github.io) · [Download APK](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.4-security/mmis-0.3.4-security.apk) · [Release notes](https://github.com/NarayanaSupramati/mmis/releases/tag/v0.3.4-security) · [Pitch deck (PDF)](https://narayanasupramati.github.io/mmis-hackathon-deck.pdf) · [Watch the demo](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis_demo.mp4)
 
 
 
@@ -85,14 +85,14 @@ Program: `MmisXGzDeJbPeK9uMDpqYxQ3ED7xsjYahP9rS5AvuYz`
 
 ## Try it
 
-The verified Android beta is **0.3.3-demo**, code **13**. [Download the official APK from GitHub Releases](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis-0.3.3-demo.apk). The APK is a Release asset and is not committed to source history.
+The verified Android beta is **0.3.4-security**, code **14**. [Download the official APK from GitHub Releases](https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.4-security/mmis-0.3.4-security.apk). The APK is a Release asset and is not committed to source history.
 
 Install the official APK on Android 10+ with a supported 4 KB page-size device, create or restore a messaging identity, and wait for private network Ready. Choose **New**, enter an address or scan its QR, review the recipient, then open a chat. For your own public listing, connect a Mainnet wallet and explicitly enable messaging. Wallet approval can incur Mainnet fees.
 
 Verify the APK with Android SDK build-tools:
 
 ```sh
-apksigner verify --verbose --print-certs mmis-0.3.3-demo.apk
+apksigner verify --verbose --print-certs mmis-0.3.4-security.apk
 ```
 
 Package: `network.mmis.runtime`  
@@ -105,10 +105,17 @@ Official signing certificate SHA-256:
 APK SHA-256:
 
 ```text
-d15bb0299540a6a89718cdeae68628a86062161fa2885d49c3b40952f86a7f6c
+ff4c43a58a32ab91e5b7715cf86acd874050d700bf6681e12fc0942abd805920
 ```
 
 [Release notes](docs/release-notes.md) · [Machine-readable metadata](release.json)
+
+## Security
+
+- [Security and threat model](docs/security-model.md)
+- [One-time hackathon audit response and validation](SECURITY-AUDIT-RESPONSE.md)
+
+The recorded demo shows 0.3.3-demo. The current 0.3.4-security APK updates dependencies and intent handling; the product flow is unchanged.
 
 ## Beta limitations
 

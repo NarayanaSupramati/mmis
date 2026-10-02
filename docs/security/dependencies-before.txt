@@ -1,0 +1,6 @@
+Audited commit: 726530c3bd828e969e7b2419b1b1847f7347fb55
+releaseRuntimeClasspath: org.bouncycastle:bcprov-jdk18on:1.80 (direct)
+BC dependencyInsight: no other version requests for this artifact
+mmis-registry direct production dependency: anchor-lang =1.2.0
+bincode 1.3.3: transitive via anchor-lang 1.2.0, solana-instruction 4.0.0, solana-sysvar 3.1.1
+No direct bincode declaration or import in MMIS source.

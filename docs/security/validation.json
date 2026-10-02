@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-02",
+  "auditCommit": "726530c3bd828e969e7b2419b1b1847f7347fb55",
+  "androidUnitTests": 74,
+  "androidUnitFailures": 0,
+  "registryLocalScenarios": [
+    {
+      "name": "Rust/JS canonical PDA agreement",
+      "result": "PASS"
+    },
+    {
+      "name": "zero-key-register",
+      "result": "PASS"
+    },
+    {
+      "name": "zero-token-register",
+      "result": "PASS"
+    },
+    {
+      "name": "register exact 53 bytes high u32 rev1",
+      "result": "PASS"
+    },
+    {
+      "name": "duplicate-register",
+      "result": "PASS"
+    },
+    {
+      "name": "A-update-PDA-B",
+      "result": "PASS"
+    },
+    {
+      "name": "B-update-PDA-A",
+      "result": "PASS"
+    },
+    {
+      "name": "unauthorized-close",
+      "result": "PASS"
+    },
+    {
+      "name": "missing-signer",
+      "result": "PASS"
+    },
+    {
+      "name": "update-missing",
+      "result": "PASS"
+    },
+    {
+      "name": "close-missing",
+      "result": "PASS"
+    },
+    {
+      "name": "zero-key-update",
+      "result": "PASS"
+    },
+    {
+      "name": "zero-token-update",
+      "result": "PASS"
+    },
+    {
+      "name": "no-op-update",
+      "result": "PASS"
+    },
+    {
+      "name": "exact signed bytes replay: revision remains 2",
+      "result": "PASS"
+    },
+    {
+      "name": "distinct updates last executed wins rev4",
+      "result": "PASS"
+    },
+    {
+      "name": "close returns all donations to W; extra destination ignored",
+      "result": "PASS"
+    },
+    {
+      "name": "second-close",
+      "result": "PASS"
+    },
+    {
+      "name": "re-register resets revision1",
+      "result": "PASS"
+    },
+    {
+      "name": "prefunded empty System PDA initializes and tops up rent",
+      "result": "PASS"
+    },
+    {
+      "name": "overflow",
+      "result": "PASS"
+    },
+    {
+      "name": "discriminator",
+      "result": "PASS"
+    },
+    {
+      "name": "trailing",
+      "result": "PASS"
+    },
+    {
+      "name": "future",
+      "result": "PASS"
+    },
+    {
+      "name": "owner",
+      "result": "PASS"
+    },
+    {
+      "name": "truncated",
+      "result": "PASS"
+    },
+    {
+      "name": "revision-zero",
+      "result": "PASS"
+    },
+    {
+      "name": "prefund-nonempty",
+      "result": "PASS"
+    },
+    {
+      "name": "prefund-program-malformed",
+      "result": "PASS"
+    },
+    {
+      "name": "executable",
+      "result": "PASS"
+    },
+    {
+      "name": "on-ledger rollback: first update succeeds, second fails; original bytes/revision retained",
+      "result": "PASS"
+    }
+  ],
+  "registryAbiTests": {
+    "lab": 2,
+    "mainnet": 2
+  },
+  "apiLint": [
+    "NewApi: PASS",
+    "InlinedApi: PASS"
+  ],
+  "compiledVariants": [
+    "debug",
+    "release",
+    "hackathon",
+    "migration"
+  ],
+  "physicalSeeker": {
+    "inPlaceUpdate": true,
+    "cmixReady": true,
+    "receivedFromApi29Emulator": true,
+    "replyReceivedOnEmulator": true,
+    "mwaReauthorize": true,
+    "mwaDetachedSignatureVerified": true,
+    "modifiedMessageRejected": true,
+    "rfc8032VectorPassed": true,
+    "productionBridgeInert": true,
+    "onChainTransactions": 0
+  },
+  "apk": {
+    "version": "0.3.4-security",
+    "versionCode": 14,
+    "bytes": 193273992,
+    "sha256": "ff4c43a58a32ab91e5b7715cf86acd874050d700bf6681e12fc0942abd805920",
+    "package": "network.mmis.runtime",
+    "minSdk": 29,
+    "targetSdk": 36,
+    "debuggable": false,
+    "certificateSha256": "1608df41e65bee06025148aea30873cf130a3a8d83f8576b4dbd28348cc3302a"
+  },
+  "limits": "Focused project regressions, not an independent rerun of the one-time audit or a reliability guarantee."
+}

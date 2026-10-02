@@ -1,0 +1,6 @@
+Security follow-up: 0.3.4-security, versionCode 14
+releaseRuntimeClasspath: org.bouncycastle:bcprov-jdk18on:1.86 (direct)
+BC dependencyInsight: no competing requests for this artifact
+mmis-registry direct production dependency: anchor-lang =1.2.0 (unchanged)
+bincode 1.3.3 remains transitive; Cargo.lock unchanged.
+Rust crate license metadata: MIT (matching the existing repository license).

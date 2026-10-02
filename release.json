@@ -1,12 +1,12 @@
 {
   "name": "Money Moves in Silence",
-  "version": "0.3.3-demo",
-  "versionCode": 13,
+  "version": "0.3.4-security",
+  "versionCode": 14,
   "package": "network.mmis.runtime",
   "minSdk": 29,
   "targetSdk": 36,
-  "bytes": 193406492,
-  "sha256": "d15bb0299540a6a89718cdeae68628a86062161fa2885d49c3b40952f86a7f6c",
+  "bytes": 193273992,
+  "sha256": "ff4c43a58a32ab91e5b7715cf86acd874050d700bf6681e12fc0942abd805920",
   "certificateSha256": "16:08:DF:41:E6:5B:EE:06:02:51:48:AE:A3:08:73:CF:13:0A:3A:8D:83:F8:57:6B:4D:BD:28:34:8C:C3:30:2A",
   "website": "https://narayanasupramati.github.io",
   "source": "https://github.com/NarayanaSupramati/mmis",
@@ -14,10 +14,10 @@
   "programId": "MmisXGzDeJbPeK9uMDpqYxQ3ED7xsjYahP9rS5AvuYz",
   "registryProtocolVersion": 1,
   "upgradeable": true,
-  "artifact": "mmis-0.3.3-demo.apk",
-  "downloadUrl": "https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis-0.3.3-demo.apk",
+  "artifact": "mmis-0.3.4-security.apk",
+  "downloadUrl": "https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.4-security/mmis-0.3.4-security.apk",
   "publicationStatus": "published",
   "demoUrl": "https://github.com/NarayanaSupramati/mmis/releases/download/v0.3.3-demo/mmis_demo.mp4",
   "deckUrl": "https://narayanasupramati.github.io/mmis-hackathon-deck.pdf",
-  "releaseUrl": "https://github.com/NarayanaSupramati/mmis/releases/tag/v0.3.3-demo"
+  "releaseUrl": "https://github.com/NarayanaSupramati/mmis/releases/tag/v0.3.4-security"
 }
