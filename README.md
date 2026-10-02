@@ -135,4 +135,16 @@ On Windows use `gradlew.bat`. Debug uses the Lab/devnet profile and local Debug 
 
 `android-runtime-probe/` contains the Android app (historical directory name); `registry/` contains the Solana program; `docs/` contains public documentation and selected protocol fixtures; `scripts/` contains build support.
 
+### Review the implementation
+
+| Area | Source and documentation |
+|---|---|
+| Native Android app | [Application source](android-runtime-probe/app/src/main/) · [Unit tests](android-runtime-probe/app/src/test/) |
+| Solana registry | [Program source](registry/programs/) · [Interface definitions](registry/idl/) · [Registry documentation](docs/registry.md) |
+| Discovery and messaging boundaries | [Architecture](docs/architecture.md) · [Privacy model](docs/privacy-model.md) |
+| Build and dependency provenance | [Build instructions](docs/build.md) · [Third-party notices](third-party/README.md) |
+| Published artifact verification | [Release metadata](release.json) · [Release notes](docs/release-notes.md) |
+
+These links identify the implementation and its documented boundaries for review; they do not constitute a security audit or certification.
+
 MMIS-owned code and documentation: [MIT](LICENSE). Dependencies retain their own licenses; see [third-party notices](third-party/README.md).
