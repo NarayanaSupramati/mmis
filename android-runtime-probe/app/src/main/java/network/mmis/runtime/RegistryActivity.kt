@@ -41,9 +41,7 @@ class RegistryActivity:ComponentActivity() {
     private fun run(operation:String,payload:JSONObject) { lifecycleScope.launch { registry.operate(operation,payload,sender) { lifecycle.withResumed {} } } }
     private fun handle(intent:Intent) {
         if(applicationInfo.flags and android.content.pm.ApplicationInfo.FLAG_DEBUGGABLE==0) return
-        val operation=intent.getStringExtra("command") ?: return; intent.removeExtra("command")
-        val payload=intent.getStringExtra("payload")?.let { JSONObject(String(Base64.getDecoder().decode(it),Charsets.UTF_8)) } ?: JSONObject()
-        run(operation,payload)
+        TestIntentBridge.registry(intent,::run)
     }
     override fun onNewIntent(intent:Intent) { super.onNewIntent(intent); handle(intent) }
     override fun onResume() { super.onResume(); handler.post(refresh) }

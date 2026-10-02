@@ -24,6 +24,7 @@ class MainActivity:ComponentActivity() {
     override fun onCreate(savedInstanceState:Bundle?) {
         val splash=installSplashScreen()
         super.onCreate(savedInstanceState);walletSender=ActivityResultSender(this)
+        if(!acceptLaunch(intent)) { finish();return }
         splash.setOnExitAnimationListener { it.remove() }
         // Access the model now: startup runs concurrently with the visual presentation.
         val productModel=model
@@ -46,14 +47,9 @@ class MainActivity:ComponentActivity() {
         if(app.product.pendingNeedsCheck()) lifecycleScope.launch { model.mutation("reconcile",app.wallet.selectedAddress(),walletSender) { lifecycle.withResumed {} } }
     }
     override fun onPause() { app.product.background();app.notifications.foreground(false);app.runtime.event("ActivityPaused");super.onPause() }
-    override fun onNewIntent(intent:Intent) { super.onNewIntent(intent);handle(intent) }
+    override fun onNewIntent(intent:Intent) { super.onNewIntent(intent);if(acceptLaunch(intent)) handle(intent) }
+    private fun acceptLaunch(intent:Intent)=IncomingLaunch.accepts(intent.action,intent.dataString)
     private fun handle(intent:Intent) {
-        if(applicationInfo.flags and android.content.pm.ApplicationInfo.FLAG_DEBUGGABLE==0) return
-        val command=intent.getStringExtra("command") ?: return;intent.removeExtra("command")
-        if(command=="recreate") { recreate();return }
-        if(command.startsWith("wallet-")) { startActivity(Intent(this,WalletActivity::class.java).putExtra("command",command.removePrefix("wallet-")));return }
-        if(command.startsWith("registry-")) { startActivity(Intent(this,RegistryActivity::class.java).putExtra("command",command.removePrefix("registry-")).putExtra("payload",intent.getStringExtra("payload")));return }
-        val data=intent.getStringExtra("payload")?.let { JSONObject(String(java.util.Base64.getDecoder().decode(it),Charsets.UTF_8)) } ?: JSONObject()
-        app.runtime.command(command,data)
+        TestIntentBridge.main(this,intent,app)
     }
 }

@@ -15,11 +15,11 @@ android {
             value.toInt().also { require(it in listOf(29,30,31,33)) { "Probe APIs: 29, 30, 31, 33 only" } }
         }.getOrElse(29)
         targetSdk = 36
-        versionCode = 13
-        versionName = "0.3.3"
+        versionCode = 14
+        versionName = "0.3.4"
         // Resource-only replacement point; used by asset/fallback acceptance builds.
         resValue("string", "launch_animation_resource", providers.gradleProperty("launchAsset").getOrElse("mmis_intro"))
-        testInstrumentationRunner = "network.mmis.runtime.ProbeTests"
+        testInstrumentationRunner = if(providers.gradleProperty("securitySmoke").isPresent) "network.mmis.runtime.SecuritySmoke" else "network.mmis.runtime.ProbeTests"
     }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
     buildFeatures { compose = true; buildConfig = true }
@@ -36,7 +36,7 @@ android {
     buildTypes {
         getByName("debug") { buildConfigField("String", "REGISTRY_PROFILE", "\"Lab\""); versionNameSuffix="-lab" }
         getByName("release") {
-            versionNameSuffix="-demo"
+            versionNameSuffix="-security"
             buildConfigField("String", "REGISTRY_PROFILE", "\"Release\"")
             signingConfig=signingConfigs.findByName("production")
             isDebuggable=false
@@ -44,7 +44,7 @@ android {
         create("hackathon") {
             initWith(getByName("release"))
             buildConfigField("String", "REGISTRY_PROFILE", "\"Release\"")
-            versionNameSuffix="-demo"
+            versionNameSuffix="-security"
             matchingFallbacks.add("release")
         }
         create("migration") {
@@ -55,6 +55,10 @@ android {
         }
     }
     sourceSets.getByName("migration").res.srcDir("src/debug/res")
+    sourceSets.getByName("migration").java.srcDir("src/debug/java")
+    sourceSets.getByName("release").java.srcDir("src/production/java")
+    sourceSets.getByName("hackathon").java.srcDir("src/production/java")
+    if(providers.gradleProperty("securitySmoke").isPresent) sourceSets.getByName("androidTest").java.setSrcDirs(listOf("src/securityTest/java"))
     sourceSets.getByName("test").resources.srcDirs("../../docs/fixtures")
 }
 kotlin { compilerOptions { jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17) } }
@@ -104,7 +108,7 @@ dependencies {
     implementation("com.solanamobile:mobile-wallet-adapter-clientlib-ktx:2.0.7")
     implementation("com.solanamobile:web3-solana:0.3.0-beta4")
     implementation("io.github.funkatronics:multimult:0.2.3")
-    implementation("org.bouncycastle:bcprov-jdk18on:1.80")
+    implementation("org.bouncycastle:bcprov-jdk18on:1.86")
     implementation("androidx.activity:activity-ktx:1.10.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
     testImplementation("junit:junit:4.13.2")

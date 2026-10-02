@@ -49,6 +49,9 @@ pub struct MessagingEndpoint {
 }
 impl MessagingEndpoint { pub const SPACE: usize = 8 + 1 + 32 + 4 + 8; }
 
+// Authority is the signing wallet encoded into the PDA seeds in all three instructions.
+// Account<MessagingEndpoint> checks program ownership; the wallet key is intentionally
+// not duplicated in the 53-byte account data. Updates and close require the same signer/PDA.
 #[derive(Accounts)]
 pub struct RegisterEndpoint<'info> {
     #[account(mut)]

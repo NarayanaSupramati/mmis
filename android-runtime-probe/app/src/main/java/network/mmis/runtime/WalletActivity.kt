@@ -33,11 +33,7 @@ class WalletActivity: ComponentActivity() {
     }
     private fun handle(intent:Intent) {
         if(applicationInfo.flags and android.content.pm.ApplicationInfo.FLAG_DEBUGGABLE==0) return
-        intent.getStringExtra("command")?.let {
-            intent.removeExtra("command")
-            if(it=="double-authorize") { run("authorize"); run("authorize") }
-            else if(it!="wallet") run(it)
-        }
+        TestIntentBridge.wallet(intent,::run)
     }
     override fun onNewIntent(intent:Intent) { super.onNewIntent(intent); handle(intent) }
     override fun onResume() { super.onResume(); handler.post(refresh) }
